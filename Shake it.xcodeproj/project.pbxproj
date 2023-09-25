@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5205A5BA2ABB6684004ADB22 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205A5B32ABB6684004ADB22 /* CoreDataController.swift */; };
 		5205A5BC2ABB6684004ADB22 /* ShakeitDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5205A5B52ABB6684004ADB22 /* ShakeitDataModel.xcdatamodeld */; };
 		52D0F5D02AB891E0004241C2 /* ShakeitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D0F5CF2AB891E0004241C2 /* ShakeitApp.swift */; };
 		52D0F5D42AB891E2004241C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D0F5D32AB891E2004241C2 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5205A5B32ABB6684004ADB22 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
 		5205A5B62ABB6684004ADB22 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		52D0F5CC2AB891E0004241C2 /* Shake it.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shake it.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D0F5CF2AB891E0004241C2 /* ShakeitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeitApp.swift; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				5205A5B52ABB6684004ADB22 /* ShakeitDataModel.xcdatamodeld */,
+				5205A5B32ABB6684004ADB22 /* CoreDataController.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				52D0F5D02AB891E0004241C2 /* ShakeitApp.swift in Sources */,
 				5205A5BC2ABB6684004ADB22 /* ShakeitDataModel.xcdatamodeld in Sources */,
+				5205A5BA2ABB6684004ADB22 /* CoreDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5205A5B02ABB6684004ADB22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5205A5B72ABB6684004ADB22 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		529FD6EF2ABC9043000838AF /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				529FD6EF2ABC9043000838AF /* CoreData */,
+				5205A5B72ABB6684004ADB22 /* ViewModels */,
+				5205A5B02ABB6684004ADB22 /* Views */,
 				52D0F5CF2AB891E0004241C2 /* ShakeitApp.swift */,
 				52D0F5D32AB891E2004241C2 /* Assets.xcassets */,
 				52D0F5D52AB891E2004241C2 /* Preview Content */,

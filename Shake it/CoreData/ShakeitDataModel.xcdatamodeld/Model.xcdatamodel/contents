@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+    <entity name="Cocktail" representedClassName="Cocktail" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="components" toMany="YES" deletionRule="Nullify" destinationEntity="Quantity" inverseName="cocktail" inverseEntity="Quantity"/>
+    </entity>
+    <entity name="Ingredient" representedClassName="Ingredient" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="quantity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quantity" inverseName="ingredient" inverseEntity="Quantity"/>
+    </entity>
+    <entity name="Quantity" representedClassName="Quantity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+        <relationship name="cocktail" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cocktail" inverseName="components" inverseEntity="Cocktail"/>
+        <relationship name="ingredient" maxCount="1" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="quantity" inverseEntity="Ingredient"/>
     </entity>
 </model>
